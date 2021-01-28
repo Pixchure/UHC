@@ -1,4 +1,4 @@
-name: UhcCore
+name: UHC
 main: com.gmail.val59000mc.UhcCore
 version: @version@
 description: Automates UHC games on a dedicated server
