@@ -12,7 +12,8 @@ permissions:
 commands:
     uhccore:
         description: "Type '/uhccore help' to see a list of commands"
-        usage: "/uhccore <sub-command> (Debug command only!)"
+        usage: "/<command> <sub-command> (Debug command only!)"
+        aliases: [ uhc ]
     chat:
         description: "Type '/chat' to toggle global chat"
         usage: "/chat"
