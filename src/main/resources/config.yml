@@ -186,7 +186,7 @@ customize-game-behavior:
 
     # Set it to true to allow droping a player head when a player dies
     # Eating the head regenerates your team for 5 seconds
-    add-regen-head-drop-on-player-death: false
+    add-regen-head-drop-on-player-death: true
     # Set this to true to double the health given to your team.
     double-regen-head: false
 
@@ -500,11 +500,11 @@ world-list:
 #Enable bungee-coord support to send players back to the server of your choice when the game ends
 bungee-support:
     #Set it to true to send players back to a server at the end
-    enable: false
+    enable: true
     #Set it to true if you want players to get a return to lobby item on their hotbar.
     use-lobby-item: true
     #The name of the server (same as in your bungee config)
-    send-players-to-server-after-end: lobby
+    send-players-to-server-after-end: hub
     #Time (in seconds) before sending the player to the hub (If spectating after death is disabled and they don't have the permission 'uhc-core.spectate.override').
     time-before-send-after-death: 0
     #Time (in seconds) before sending all the players to the hub after the game has ended
@@ -547,4 +547,4 @@ debug: false
 # When set to true, the game won't end when only one player is left. This can be used to play alone in order to test games.
 one-player-mode: false
 # Set to false if you want to disable auto update.
-auto-update: true
+auto-update: false
