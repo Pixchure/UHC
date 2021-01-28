@@ -57,9 +57,9 @@ public class UhcCore extends JavaPlugin {
 
         if (version == 0) {
             version = MIN_VERSION;
-            Bukkit.getLogger().warning("[UhcCore] Failed to detect server version! " + versionString + "?");
+            Bukkit.getLogger().warning("UHC > Failed to detect server version! " + versionString + "?");
         } else {
-            Bukkit.getLogger().info("[UhcCore] 1." + version + " Server detected!");
+            Bukkit.getLogger().info("UHC > 1." + version + " Server detected!");
         }
     }
 
@@ -146,7 +146,7 @@ public class UhcCore extends JavaPlugin {
             try {
                 storage.save();
             } catch (IOException ex) {
-                Bukkit.getLogger().warning("[UhcCore] Failed to save storage.yml file!");
+                Bukkit.getLogger().warning("UHC > Failed to save storage.yml file!");
                 ex.printStackTrace();
             }
         }
@@ -166,7 +166,7 @@ public class UhcCore extends JavaPlugin {
         gameManager.getScenarioManager().disableAllScenarios();
 
         updater.runAutoUpdate();
-        Bukkit.getLogger().info("[UhcCore] Plugin disabled");
+        Bukkit.getLogger().info("UHC > Plugin disabled");
     }
 
 }
